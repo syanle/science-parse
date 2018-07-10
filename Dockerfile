@@ -18,6 +18,6 @@ ADD server/target/scala-2.11/science-parse-server-assembly-$SP_VERSION.jar /app/
 
 RUN java -Xmx8g -jar /app/science-parse-server-assembly-$SP_VERSION.jar --downloadModelOnly
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD java -Xmx8g -jar science-parse-server-assembly-$SP_VERSION.jar
